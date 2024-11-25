@@ -13,7 +13,14 @@ def hello_world():
 
 @app.route('/encrypt/<string:valeur>')
 def encryptage(valeur):
-    return valeur
+  key = Fernet.generate_key()
+  f = Fernet(key)
+  token = f.encrypt(valeur)
+  return token
+
+
+
+
                                                                                                                                                             
 if __name__ == "__main__":
   app.run(debug=True)
