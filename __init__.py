@@ -16,10 +16,7 @@ def encryptage(valeur):
   key = Fernet.generate_key()
   f = Fernet(key)
   token = f.encrypt(b'valeur')
-  return token
-
-
-
+  return f.decrypt(token)
 
                                                                                                                                                             
 if __name__ == "__main__":
