@@ -15,7 +15,7 @@ def hello_world():
 def encryptage(valeur):
   key = Fernet.generate_key()
   f = Fernet(key)
-  token = f.encrypt(valeur)
+  token = f.encrypt(b'valeur')
   return token
 
 
