@@ -12,7 +12,7 @@ def hello_world():
     return render_template('hello.html')
 
 @app.route('/encrypt/<string:valeur>')
-def encryptage():
+def encryptage(valeur):
     return valeur
                                                                                                                                                             
 if __name__ == "__main__":
