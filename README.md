@@ -90,7 +90,9 @@ Objectif : Installer le module Cryptopython SQLite sur votre serveur
 Difficulté : Faible (~15 minutes)
 ---------------------------------------------------
 1° - Connectez vous en SSH à votre serveur Alwaysdata via l'adresse suivante :**https://ssh-{compte}.alwaysdata.net**. Remarque importante, {compte} est à remplacer par votre compte Alwaysdata. C'est à dire le compte que vous avez utilisé pour renseigner votre secret GitHUB USERNAME.   
-2° - Une fois connecté, depuis de la console SSH, executez les commandes suivantes : 1° - **pip install cryptography** puis 2° - **cp -r ~/.local/lib/python3.12/site-packages/* ~/www/flask/env/lib/python3.12/site-packages/**  
+2° - Une fois connecté, depuis de la console SSH, executez les commandes suivantes :  
+Commande 1 : **pip install cryptography**  
+Commande 2 : **cp -r ~/.local/lib/python3.12/site-packages/*** **~/www/flask/env/lib/python3.12/site-packages/**    
 Bravo, votre serveur est à présent opérationnel.  
 
 LES ROUTES (API)
