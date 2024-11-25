@@ -117,18 +117,12 @@ Cette fonctionnalité sera accéssible via la route suivante : **/decrypt/**
 Dans les exercices précédents, la clé de cryptage (et décryptage) était unique pour tous les internaute.
 Dans cet exercice N°2, l'internaute renseignera lui-même sa clé de cryptage et de décryptage.
   
+--------------------------------------------------------------------
+Troubleshooting :
 ---------------------------------------------------
-Séquence 6 : Le projet de bibliothèque
+Objectif : Visualiser ses logs et découvrir ses erreurs
 ---------------------------------------------------
-Objectif : Créer une application de biliothèque  
-Difficulté : Moyenne (~180 minutes)
----------------------------------------------------
-Votre projet consiste à present à concevoir et développer une application de gestion de bibliothèque moderne qui simplifie le processus de prêt et de retour de livres. Les fonctionnalités attendues dans le cadre de ce projet sont les suivantes :  
-•	L’enregistrement et la suppression de livres.  
-•	La recherche de livres disponibles.  
-•	L'emprunt possible d'un livre par un utilisateur.  
-•	La gestion des utilisateurs.  
-•	La gestion des stocks.  
-Votre travail est de modifier votre code afin de répondre aux besoins définis ci-dessus.
-L'application exploitera des API pour interagir avec la base de données et un contrôle d'accès Utilisateur/Administrateur doit être mis en place.  
-L’application pourra être enrichie avec des fonctionnalités supplémentaires telles que des recommandations de livres, des notifications pour les retours en retard, ou encore des rapports statistiques sur l'utilisation des livres pour améliorer l'expérience utilisateur et la gestion de la bibliothèque.  
+Lors de vos développements, vous serez peut-être confronté à des erreurs systèmes car vous avez faits des erreurs de syntaxes dans votre code, faits de mauvaises déclarations de fonctions, appelez des modules inexistants, mal renseigner vos secrets, etc…  
+Les causes d'erreurs sont quasi illimitées. **Vous devez donc vous tourner vers les logs de votre système pour comprendre d'où vient le problème** :  
+Voici une vidéo pour accéder aux logs de vos Actions GitHUB : [Vidéo Log GitHUB](https://youtu.be/rhGrDLSFH7Y)  
+Voici une vidéo pour vous expliquer comment accéder au logs de votre serveur Alwaysdata : [Vidéo Log Alwaysdata](https://youtu.be/URWMWqVMS2U)  
