@@ -1,9 +1,8 @@
 ------------------------------------------------------------------------------------------------------
-PROJET API CrytoPython
+PROJET API CryptoPython
 ------------------------------------------------------------------------------------------------------
-Quelles sont les notions qui vont être abordées au cours de cet atelier ?
-Cet atelier a pour objectif de vous apprendre à créer un système de cryptographie grace à Python et sa bibliothèque Cryptopython. Vous allez ensuite exploter cette solution via la construction d'API sous le Framework Flask.vVous allez donc créer des API mais également découvrir les Actions et les Secrets GitHUB pour au final mettre en service et exploiter une solution Web.
-Large programme mais tout à fait accessible et ne nécessitant pas de base technique particulière. Juste de l'observation et de la rigueur dans votre travail.
+Quelles sont les notions qui vont être abordées au cours de cet atelier CryptoPython ?
+Cet atelier a pour objectif de vous apprendre à créer un système de cryptographie d'information grace à Python et sa bibliothèque Cryptography. Vous allez ensuite explotier cette solution via la construction d'API sous le Framework Flask. Vous allez donc créer des API mais également découvrir les Actions et les Secrets GitHUB pour au final mettre en service et exploiter une solution Web de Crypto. Large programme mais tout à fait accessible et ne nécessitant pas de base technique particulière. Juste de l'observation et de la rigueur dans votre travail.
 
 -------------------------------------------------------------------------------------------------------
 Séquence 1 : GitHUB
@@ -20,12 +19,12 @@ Si besoin, une vidéo pour vous aider à créer votre propre compte GitHUB : [Cr
 A noter que **si vous possédez déjà un compte GitHUB, vous pouvez le conserver pour réaliser cet atelier**. Pas besion d'en créer un nouveau.  
 Remarque importante : **Lors de votre inscription, utilisez une adresse mail valide. GitHUB n'accepte pas les adresses mails temporaires**  
 
-2° - Faites un Fork du Repository suivant : https://github.com/bstocker/EFREI_CrytoPython.git  
+2° - Faites un Fork du Repository suivant : https://github.com/bstocker/EFREI_CryptoPython.git  
 Voici une vidéo d'accompagnement pour vous aider dans les "Forks" : [Forker ce projet](https://youtu.be/p33-7XQ29zQ)    
   
-**Travail demandé :** Créé votre compte GitHUB, faites le fork de ce projet et **envoyer l'URL de votre Repository GitHUB par mail à votre enseignant**.
+**Travail demandé :** Créé votre compte GitHUB, faites le fork de ce projet et **envoyez l'URL de votre Repository GitHUB par mail à votre enseignant**.
 
-Notion acquise lors de cette séquence :  
+Notions acquises lors de cette séquence :  
 Vous avez appris lors de cette séquence à créer des Repository pour stocker et travailler avec votre code informatique. Vous pourez par la suite travailler en groupe sur un projet. Vous avez également appris à faire des Forks. C'est à dire, faire des copies de projets déjà existant dans GitHUB que vous pourrez ensuite adapter à vos besoins.
   
 ---------------------------------------------------
@@ -93,17 +92,17 @@ Difficulté : Faible (~15 minutes)
 2° - Une fois connecté, depuis de la console SSH, executez les commandes suivantes :  
 Commande 1 : **pip install cryptography**  
 Commande 2 : **cp -r ~/.local/lib/python3.12/site-packages/*** **~/www/flask/env/lib/python3.12/site-packages/**    
-Bravo, votre serveur est à présent opérationnel.  
+Bravo, votre serveur Flask de cryptographie est à présent opérationnel.  
 
 LES ROUTES (API)
 -------------------------------------------
-Votre solution est à présent opérationnelle. Vous pouvez testez les routes (API) comme suit :  
+Votre solution est à présent opérationnelle. Vous pouvez testez vos routes (API) comme suit :  
   
 https://{Votre_URL}**/**  
-Pointe sur le fichier helloWorld d'accueil  
+C'est route pointe sur le fichier d'accuei! helloWorld.html  
 
 https://{Votre_URL}**/encrypt/{Valeur à encrypter}**  
-Vous retourne votre valeur encryptée 
+Vous retourne votre valeur saisie dans l'URL encryptée 
 
 ---------------------------------------------------
 Séquence 5 : Exercices
@@ -112,11 +111,11 @@ Objectif : Travailler votre code
 Difficulté : Moyenne (~60 minutes)
 ---------------------------------------------------
 **Exercice 1 : Création d'une API de décryptage**    
-Créer une nouvelle route dans votre application afin de pouvoir décrypter la valeur valeur saisie par l'utilisateur.  
+Créer une nouvelle route dans votre application afin de pouvoir décrypter la valeur saisie par l'utilisateur.  
 Cette fonctionnalité sera accéssible via la route suivante : **/decrypt/**  
 
 **Exercice 2 : Clés personnelles**  
-Dans les exercices précédents, la clé de cryptage (et décryptage) était unique pour tous les internaute.
+Dans les exercices précédents, la clé de cryptage (et décryptage) était unique pour tous les internautes.
 Dans cet exercice N°2, l'internaute renseignera lui-même sa clé de cryptage et de décryptage.
   
 --------------------------------------------------------------------
