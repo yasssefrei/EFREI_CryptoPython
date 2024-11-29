@@ -85,7 +85,7 @@ L'utilité des scripts d'actions (C'est à dire des scripts exécutés lors des 
 ---------------------------------------------------
 Séquence 4 : Installer le module Cryptopython
 ---------------------------------------------------
-Objectif : Installer le module Cryptopython SQLite sur votre serveur  
+Objectif : Installer le module Cryptography sur votre serveur  
 Difficulté : Faible (~15 minutes)
 ---------------------------------------------------
 1° - Connectez vous en SSH à votre serveur Alwaysdata via l'adresse suivante :**https://ssh-{compte}.alwaysdata.net**. Remarque importante, {compte} est à remplacer par votre compte Alwaysdata. C'est à dire le compte que vous avez utilisé pour renseigner votre secret GitHUB USERNAME.   
