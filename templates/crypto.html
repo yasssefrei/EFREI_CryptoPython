@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crypto App EFREI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-black min-h-screen text-white font-sans flex flex-col items-center justify-center p-6">
+
+  <div class="w-full max-w-2xl bg-gray-800 rounded-2xl shadow-xl p-8 space-y-8">
+    <h1 class="text-3xl font-bold text-center text-blue-400">🔐 Crypto App - EFREI</h1>
+
+    <!-- Chiffrement -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-green-300">🔒 Chiffrement</h2>
+      <form action="/encrypt-form" method="post" class="space-y-4">
+        <div>
+          <label for="key_encrypt" class="block text-sm mb-1">Clé</label>
+          <input type="text" name="key" id="key_encrypt" required class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label for="message_encrypt" class="block text-sm mb-1">Message</label>
+          <textarea name="message" id="message_encrypt" rows="4" required class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-2 rounded-lg transition">Chiffrer</button>
+      </form>
+    </div>
+
+    <!-- Déchiffrement -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4 text-red-300">🔓 Déchiffrement</h2>
+      <form action="/decrypt-form" method="post" class="space-y-4">
+        <div>
+          <label for="key_decrypt" class="block text-sm mb-1">Clé</label>
+          <input type="text" name="key" id="key_decrypt" required class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        </div>
+        <div>
+          <label for="message_decrypt" class="block text-sm mb-1">Message chiffré</label>
+          <textarea name="message" id="message_decrypt" rows="4" required class="w-full px-4 py-2 rounded-lg bg-gray-700 border border-gray-600 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        </div>
+        <button type="submit" class="w-full bg-red-500 hover:bg-red-600 text-white font-semibold py-2 rounded-lg transition">Déchiffrer</button>
+      </form>
+    </div>
+
+    <!-- Résultat -->
+    {% if result %}
+      <div class="mt-6 bg-gray-900 p-4 rounded-lg border border-gray-700">
+        <h2 class="text-lg font-semibold text-blue-300">📝 Résultat :</h2>
+        <p class="mt-2 text-white break-words">{{ result }}</p>
+      </div>
+    {% endif %}
+  </div>
+
+</body>
+</html>
