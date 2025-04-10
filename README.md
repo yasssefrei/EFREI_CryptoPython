@@ -119,7 +119,7 @@ Créer une nouvelle route dans votre application afin de pouvoir décrypter la v
 Cette fonctionnalité sera accéssible via la route suivante : **/decrypt/**  
 
 **Exercice 2 : Clés personnelles**  
-Dans les exercices précédents, la clé de cryptage (et décryptage) était unique pour tous les internautes.
+Dans les exercices précédents, la clé de cryptage (et décryptage) était unique valable pour la session en cours.
 Dans cet exercice N°2, l'internaute renseignera lui-même sa clé de cryptage et de décryptage.
   
 --------------------------------------------------------------------
